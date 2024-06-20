@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Mindfulgram",
+    "version": "0.7",
+    "description": "Hide posts on your Instagram feed from people you don't follow. Hide stories. Hide comments. Keep your circle tight. Keep your focus tighter.",
+    "author": "MINDFULGRAM.APP",
+    "permissions": [
+      "https://www.instagram.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.instagram.com/*"],
+        "js": ["content_script.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
